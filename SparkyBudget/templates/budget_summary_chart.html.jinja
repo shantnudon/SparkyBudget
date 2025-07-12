@@ -7,7 +7,7 @@
     <div class="subcategory-container"> <!-- New container for each subcategory -->
         <div class="top-content">
             <div class="left-content">
-                <i class="fas fa-trash delete-icon" onclick="deleteBudget('{{ data.SubCategory }}')"></i>
+                <i class="fas fa-trash delete-icon" onclick="deleteBudget('{{ data.SubCategory }}')" style="cursor:pointer;"></i>
                 <p href="#" class="subcategory-text" onclick="showTransactionDetails(event,'{{ data.SubCategory }}','{{ data.TotalTransactionAmount }}')">
                     <img src="{{ data.ImageUrl }}" style="width:30px; height:30px; vertical-align:middle; margin-right: 8px;">
                     {{ data.SubCategory }}

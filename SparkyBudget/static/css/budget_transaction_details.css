@@ -324,6 +324,12 @@
     border-color: var(--table-border-color); /* Use theme variable */
 }
 
+.light-theme .select2-search__field {
+    background-color: #fff !important;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
 /* Styles for the split button */
 .split-button {
     background: linear-gradient(90deg, #4dd0e1, #81d4fa);

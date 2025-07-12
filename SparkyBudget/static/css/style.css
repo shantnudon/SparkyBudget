@@ -1,1062 +1,1113 @@
-
 body,
 html {
-    height: 100%;
+  height: 100%;
 }
 
 h1 {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 h2 {
-    color: #61dafb;
-    text-align: center;
+  color: #61dafb;
+  text-align: center;
 }
 
 .center-content {
-    text-align: center;
-    width: 98%;
+  text-align: center;
+  width: 98%;
 }
 
 table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    border: 1px solid #61dafb;
-    padding: 10px;
-    text-align: left;
+  border: 1px solid #61dafb;
+  padding: 10px;
+  text-align: left;
 }
 
 th {
-    background-color: #61dafb;
-    color: #282c35;
+  background-color: #61dafb;
+  color: #282c35;
 }
 
 .filters {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
 }
 
 select {
-    padding: 5px;
-    margin-right: 10px;
+  padding: 5px;
+  margin-right: 10px;
 }
 
 #monthButtons button.active {
-    /* Add your desired background color here */
-    background-color: #61dafb;
-    /* Add your desired text color here */
-    color: #282c35;
+  /* Add your desired background color here */
+  background-color: #61dafb;
+  /* Add your desired text color here */
+  color: #282c35;
 }
 
 a.analyze-link {
-    /* Set the color to match the header */
-    color: #61dafb;
-    /* Set the font size to match the header */
-    font-size: 2.2em;
-    /* Remove underline */
-    text-decoration: none;
+  /* Set the color to match the header */
+  color: #61dafb;
+  /* Set the font size to match the header */
+  font-size: 2.2em;
+  /* Remove underline */
+  text-decoration: none;
 }
 
 a.analyze-link:hover {
-    /* Set the color for the hover effect */
-    color: #61dafb;
-    /* Set the font size to match the header */
-    font-size: 2.2em;
-
+  /* Set the color for the hover effect */
+  color: #61dafb;
+  /* Set the font size to match the header */
+  font-size: 2.2em;
 }
 
-
 #spinner {
-    /* Initially hide the spinner */
-    display: none;
-    /* Adjust the width if needed */
-    width: 25px;
-    /* Adjust the height if needed */
-    height: 25px;
+  /* Initially hide the spinner */
+  display: none;
+  /* Adjust the width if needed */
+  width: 25px;
+  /* Adjust the height if needed */
+  height: 25px;
 }
 
 /* Add this style for the hyperlink in the Spent column */
 #transactionTable a {
-    /* White font color for the hyperlink */
-    color: #fff;
-
+  /* White font color for the hyperlink */
+  color: #fff;
 }
 
 .child-row {
-    display: none;
+  display: none;
 }
 
 .hidden-balance-details {
-    display: none;
+  display: none;
 }
 
 #balanceDetailsTableToggleButton {
-    background-color: #282c35;
-    color: #61dafb;
-    font-size: 0.75em;
+  background-color: #282c35;
+  color: #61dafb;
+  font-size: 0.75em;
 }
 
 .invalid-date {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 #addBudgetForm.hide {
-    display: none;
+  display: none;
 }
 
-
 .active {
-    background-color: #336699;
-    color: #ffffff;
+  background-color: #336699;
+  color: #ffffff;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Adjust the value as needed */
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adjust the value as needed */
+  padding-bottom: 50px;
 }
 
 .category-bar {
-    width: 95%;
-    margin-bottom: 1px;
-    position: relative;
+  width: 95%;
+  margin-bottom: 1px;
+  position: relative;
 }
 
 .top-content {
-    display: flex;
-    /* Align items vertically centered */
-    align-items: center;
-    /* Add space between left and right content */
-    justify-content: space-between;
-    margin-left: 0;
-    /* Adjust the width as needed */
-    width: 80%;
+  display: flex;
+  /* Align items vertically centered */
+  align-items: center;
+  /* Add space between left and right content */
+  justify-content: space-between;
+  margin-left: 0;
+  /* Adjust the width as needed */
+  width: 80%;
 }
 
 .subcategory-bar {
-    height: 10px;
-    border-radius: 5px;
-
+  height: 10px;
+  border-radius: 5px;
 }
 
 .left-content {
-    /* Align items to center vertically */
-    align-items: center;
-    left: 10px;
-    font-size: 15px;
-    /* Adjust margin as needed */
-    margin-left: 0;
-    /* Add display flex for button alignment */
-    display: flex;
+  /* Align items to center vertically */
+  align-items: center;
+  left: 10px;
+  font-size: 15px;
+  /* Adjust margin as needed */
+  margin-left: 0;
+  /* Add display flex for button alignment */
+  display: flex;
 }
 
 .right-content {
-
-    /* Add display flex for button alignment */
-    display: flex;
-
+  /* Add display flex for button alignment */
+  display: flex;
 }
 
 .delete-icon {
-    /* Adjust margin for spacing between button and text */
-    margin-right: 10px;
+  /* Adjust margin for spacing between button and text */
+  margin-right: 10px;
 }
 
-
 .input-group-text {
-    /* Set input group background color to a dark shade */
-    background-color: #333;
-    /* Set input group text color to white */
-    color: #fff;
-    /* Add a border with a slightly lighter color */
-    border: 1px solid #555;
+  /* Set input group background color to a dark shade */
+  background-color: #333;
+  /* Set input group text color to white */
+  color: #fff;
+  /* Add a border with a slightly lighter color */
+  border: 1px solid #555;
 }
 
 #date-range {
-    width: 200px;
-    /* Set input background color to a slightly lighter shade */
-    background-color: #444;
-    /* Set input text color to white */
-    color: #fff;
-    /* Add a border with a slightly lighter color */
-    border: 1px solid #555;
+  width: 200px;
+  /* Set input background color to a slightly lighter shade */
+  background-color: #444;
+  /* Set input text color to white */
+  color: #fff;
+  /* Add a border with a slightly lighter color */
+  border: 1px solid #555;
 }
 
 #selected-dates {
-    margin-top: 20px;
-    /* Set text color to white */
-    color: #fff;
+  margin-top: 20px;
+  /* Set text color to white */
+  color: #fff;
 }
 
 /* Custom styles for DateRangePicker */
 .daterangepicker {
-    /* Set calendar background color */
-    background-color: #333 !important;
-    /* Set calendar text color */
-    color: #fff !important;
+  /* Set calendar background color */
+  background-color: #333 !important;
+  /* Set calendar text color */
+  color: #fff !important;
 }
 
 .daterangepicker th {
-    /* Set header background color */
-    background-color: #444 !important;
-    /* Set header text color */
-    color: #fff !important;
+  /* Set header background color */
+  background-color: #444 !important;
+  /* Set header text color */
+  color: #fff !important;
 }
 
 .daterangepicker th.available:hover,
 .daterangepicker th.available.active {
-    /* Set hover/active header background color */
-    background-color: #555 !important;
-    /* Set hover/active header text color */
-    color: #fff !important;
+  /* Set hover/active header background color */
+  background-color: #555 !important;
+  /* Set hover/active header text color */
+  color: #fff !important;
 }
 
 .daterangepicker td,
 .daterangepicker th {
-    /* Set border color for days */
-    border-color: #555 !important;
+  /* Set border color for days */
+  border-color: #555 !important;
 }
 
 .daterangepicker .calendar-time,
 .daterangepicker .calendar-table,
 .daterangepicker .calendar-time select {
-    /* Set timepicker background color */
-    background-color: #444 !important;
-    /* Set timepicker text color */
-    color: #fff !important;
+  /* Set timepicker background color */
+  background-color: #444 !important;
+  /* Set timepicker text color */
+  color: #fff !important;
 }
 
 .daterangepicker .calendar-time select {
-    /* Set timepicker border color */
-    border: 1px solid #555 !important;
+  /* Set timepicker border color */
+  border: 1px solid #555 !important;
 }
 
-
-
 .daterangepicker .ranges li.active {
-    /* Set active range background color */
-    background-color: #555 !important;
-    /* Set active range text color */
-    color: #fff !important;
+  /* Set active range background color */
+  background-color: #555 !important;
+  /* Set active range text color */
+  color: #fff !important;
 }
 
 .daterangepicker .ranges li:hover {
-    /* Set hover range background color to light blue */
-    background-color: #3498db !important;
-    /* Set hover range text color to white */
-    color: #fff !important;
+  /* Set hover range background color to light blue */
+  background-color: #3498db !important;
+  /* Set hover range text color to white */
+  color: #fff !important;
 }
-
 
 #balanceSummaryTable {
-    max-width: 500px;
+  max-width: 500px;
 }
-
-
-
-
 
 #dropdown-container {
-    margin-top: 1vw;
-    /* Adjust the margin as needed */
-    margin-right: 12vw;
+  margin-top: 1vw;
+  /* Adjust the margin as needed */
+  margin-right: 12vw;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-
 
 /* Optional: Add some margin to the logout button */
 .logout-button {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .content {
-    height: calc(100% - 60px);
-    display: flex;
-    flex-wrap: wrap;
+  height: calc(100% - 60px);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .camera-icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .balance-summary-container {
-    flex: 1;
-    background-color: #1d1d1d;
-    padding: 5px;
-    box-sizing: border-box;
-    height: 100%; /* Match the height of .content */
-    overflow-y: auto; /* Optional: Add a scrollbar if its content overflows */
+  flex: 1;
+  background-color: #1d1d1d;
+  padding: 5px;
+  box-sizing: border-box;
+  height: 100%; /* Match the height of .content */
+  overflow-y: auto; /* Optional: Add a scrollbar if its content overflows */
 }
 
-html, body {
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Disable browser scrolling */
+html,
+body {
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disable browser scrolling */
 }
 
 .main-content {
-    flex: 4;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    overflow-y: auto; /* Keep the inner scrollbar */
-    height: 100%; /* Take the full height of .content */
+  flex: 4;
+  padding: 20px;
+  box-sizing: border-box;
+
+  overflow-y: auto; /* Keep the inner scrollbar */
+  height: 100%; /* Take the full height of .content */
 }
 
 /* Media Query for mobile devices */
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-    }
+  .content {
+    flex-direction: column;
+  }
 
+  .balance-summary-container {
+    flex: none;
+    width: 100%;
+    display: none; /* Hide by default on mobile */
+  }
 
-    .balance-summary-container {
-        flex: none;
-        width: 100%;
-        display: none; /* Hide by default on mobile */
-    }
+  .balance-summary-container:not(.hide) {
+    display: block; /* Ensure it's displayed when not hidden */
+  }
 
-    .balance-summary-container:not(.hide) {
-        display: block; /* Ensure it's displayed when not hidden */
-    }
-
-    .main-content {
-        flex: none;
-        width: 100%;
-    }
-    .toggle-nav-container {
-        display: none;
-        
-    }
-
+  .main-content {
+    flex: none;
+    width: 100%;
+  }
+  .toggle-nav-container {
+    display: none;
+  }
 }
 
 .month-year-picker-container {
-    position: relative;
-    top: 0;
-    left: 0;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .month-year-picker-container .year-month-picker.hide {
-    display: none;
+  display: none;
 }
 
 .month-year-picker-container .year-month-picker {
-    display: block;
-    position: absolute;
-    background-color: black;
-    right: 0px;
-    width: 200px;
-    padding: 4px;
-    z-index: 100;
+  display: block;
+  position: absolute;
+  background-color: black;
+  right: 0px;
+  width: 200px;
+  padding: 4px;
+  z-index: 100;
 }
 
 .month-year-picker-container .year-month-picker .year-picker {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 .month-year-picker-container .year-month-picker .month-picker {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
 }
-
-
 
 .pieChartContainer canvas {
-    width: 100% !important;
-    max-width: 200px !important; /* Ensure it's a square */
-    height: auto !important;
-    aspect-ratio: 1 / 1; /* Forces a square shape */
+  width: 100% !important;
+  max-width: 200px !important; /* Ensure it's a square */
+  height: auto !important;
+  aspect-ratio: 1 / 1; /* Forces a square shape */
 }
 
-
 .chart-total {
-    text-align: center;
-    color: #d6dadf;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    margin-top: 0;
+  text-align: center;
+  color: #d6dadf;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 /* Light theme styles for chart total text */
 .light-theme .chart-total {
-    color: var(--text-color); /* Use text color from SparkyBudget.css */
+  color: var(--text-color); /* Use text color from SparkyBudget.css */
 }
 
 /* Light theme styles for chart legend text */
 .light-theme .chartjs-legend ul li {
-    color: var(--text-color) !important; /* Use text color from SparkyBudget.css */
+  color: var(
+    --text-color
+  ) !important; /* Use text color from SparkyBudget.css */
 }
 
 /* Wrapper for side-by-side layout */
 .pieChartsWrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between the charts */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the charts */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 20px;
 }
 
 /* Adjust pieChartContainer for side-by-side display */
 .pieChartsWrapper .pieChartContainer {
-    flex: 1;
-    max-width: 240px;
-    max-width: 240px;
-    margin: 0; /* Remove auto margins to allow flex alignment */
+  flex: 1;
+  max-width: 240px;
+  max-width: 240px;
+  margin: 0; /* Remove auto margins to allow flex alignment */
 }
 
-
 .chartjs-legend ul {
-    font-size: 8px !important;  /* Reduce legend text size */
-    text-align: center;
-    line-height: 1.2; /* Reduce spacing */
+  font-size: 8px !important; /* Reduce legend text size */
+  text-align: center;
+  line-height: 1.2; /* Reduce spacing */
 }
 
 .chartjs-legend li {
-    margin: 0 !important;  /* Remove extra spacing */
-    padding: 2px !important;
+  margin: 0 !important; /* Remove extra spacing */
+  padding: 2px !important;
 }
 
 /* Light theme styles for chart legend text */
 .light-theme .chartjs-legend ul li {
-    color: var(--text-color) !important; /* Use text color from SparkyBudget.css */
+  color: var(
+    --text-color
+  ) !important; /* Use text color from SparkyBudget.css */
 }
 
 @media (max-width: 768px) {
-    .chartjs-legend ul {
-        font-size: 6px !important;  /* Smaller on mobile */
-    }
+  .chartjs-legend ul {
+    font-size: 6px !important; /* Smaller on mobile */
+  }
 }
 
 /* Light theme styles for chart legend text */
 .light-theme .chartjs-legend ul li {
-    color: var(--text-color) !important; /* Use text color from SparkyBudget.css */
+  color: var(
+    --text-color
+  ) !important; /* Use text color from SparkyBudget.css */
 }
 
-
-
-
 .pieChartContainer {
-    width: 100%;
-    max-width: 240px;
-    height: auto;
-    padding: 15px;
-    border: 1px solid #4a5263; /* Adjusted border color to complement the new background */
-    background: linear-gradient(145deg, #2E3440, #353b48); /* Subtle gradient for depth */
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* For positioning the glow */
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  padding: 15px;
+  border: 1px solid #4a5263; /* Adjusted border color to complement the new background */
+  background: linear-gradient(
+    145deg,
+    #2e3440,
+    #353b48
+  ); /* Subtle gradient for depth */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For positioning the glow */
 }
 
 /* Light theme styles for pie chart container */
 .light-theme .pieChartContainer {
-    border: 1px solid #bbbbbb; /* Lighter border color */
-    background: linear-gradient(145deg, #e0e0e0, #f0f0f0); /* Lighter background */
+  border: 1px solid #bbbbbb; /* Lighter border color */
+  background: linear-gradient(
+    145deg,
+    #e0e0e0,
+    #f0f0f0
+  ); /* Lighter background */
 }
 
 .budgetCalendarAddBugetWrapper {
-    display: flex;
-    width: 25%; 
-    align-items: center; /* Changed to align-items for vertical alignment */
-    gap: 10px; /* Added gap for spacing between items */
+  display: flex;
+  width: 25%;
+  align-items: center; /* Changed to align-items for vertical alignment */
+  gap: 10px; /* Added gap for spacing between items */
 }
 
-
 .addBudgetFormWrapper {
-    margin-top: 10px;
-    width: 20% !important; /* Keep the form width */
-    height: auto;
-    padding: 15px;
-    border: 1px solid #4a5263;
-    background: linear-gradient(145deg, #2E3440, #353b48);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Space between form groups and button */
-    align-items: center;
-    position: relative;
+  margin-top: 10px;
+  width: 20% !important; /* Keep the form width */
+  height: auto;
+  padding: 15px;
+  border: 1px solid #4a5263;
+  background: linear-gradient(145deg, #2e3440, #353b48);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form groups and button */
+  align-items: center;
+  position: relative;
+}
+
+.light-theme .addBudgetFormWrapper {
+  border: 1px solid #bbbbbb;
+  background: linear-gradient(145deg, #e0e0e0, #f0f0f0);
 }
 
 .budget-form-group {
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    width: 100%; /* Ensure the group takes full width of the wrapper */
-    gap: 10px; /* Small space between label and input */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  width: 100%; /* Ensure the group takes full width of the wrapper */
+  gap: 10px; /* Small space between label and input */
 }
 
 .budget-form-group label {
-    flex: 0 0 40%; /* Labels take 40% of the width */
-    text-align: left; /* Align text to the left */
+  flex: 0 0 40%; /* Labels take 40% of the width */
+  text-align: left; /* Align text to the left */
 }
 
 .budget-form-group select {
-    flex: 0 0 60%; /* Dropdown and input take 60% of the width */
-    width: 100% !important; /* Ensure they fill their allocated space */
-    box-sizing: border-box; /* Include padding and border in the width */
+  flex: 0 0 60%; /* Dropdown and input take 60% of the width */
+  width: 100% !important; /* Ensure they fill their allocated space */
+  box-sizing: border-box; /* Include padding and border in the width */
 }
-
-
 
 .budget-form-group input {
-    flex: 0 0 55%; /* Dropdown and input take 60% of the width */
-    width: 100% !important; /* Ensure they fill their allocated space */
-    box-sizing: border-box; /* Include padding and border in the width */
+  flex: 0 0 55%; /* Dropdown and input take 60% of the width */
+  width: 100% !important; /* Ensure they fill their allocated space */
+  box-sizing: border-box; /* Include padding and border in the width */
 }
-
-
-
 
 /* Animate the gradient to simulate a spinning effect */
 @keyframes spinningGradient {
-    0% {
-        border-image: linear-gradient(45deg, rgb(186, 66, 255) 35%, rgb(0, 225, 255)) 1;
-    }
-    25% {
-        border-image: linear-gradient(135deg, rgb(186, 66, 255) 35%, rgb(0, 225, 255)) 1;
-    }
-    50% {
-        border-image: linear-gradient(225deg, rgb(186, 66, 255) 35%, rgb(0, 225, 255)) 1;
-    }
-    75% {
-        border-image: linear-gradient(315deg, rgb(186, 66, 255) 35%, rgb(0, 225, 255)) 1;
-    }
-    100% {
-        border-image: linear-gradient(405deg, rgb(186, 66, 255) 35%, rgb(0, 225, 255)) 1;
-    }
+  0% {
+    border-image: linear-gradient(
+        45deg,
+        rgb(186, 66, 255) 35%,
+        rgb(0, 225, 255)
+      )
+      1;
+  }
+  25% {
+    border-image: linear-gradient(
+        135deg,
+        rgb(186, 66, 255) 35%,
+        rgb(0, 225, 255)
+      )
+      1;
+  }
+  50% {
+    border-image: linear-gradient(
+        225deg,
+        rgb(186, 66, 255) 35%,
+        rgb(0, 225, 255)
+      )
+      1;
+  }
+  75% {
+    border-image: linear-gradient(
+        315deg,
+        rgb(186, 66, 255) 35%,
+        rgb(0, 225, 255)
+      )
+      1;
+  }
+  100% {
+    border-image: linear-gradient(
+        405deg,
+        rgb(186, 66, 255) 35%,
+        rgb(0, 225, 255)
+      )
+      1;
+  }
 }
 
 /* Ensure canvas is centered */
 .pieChartContainer canvas {
-    width: 100% !important;
-    max-width: 200px !important;
-    height: auto !important;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
+  width: 100% !important;
+  max-width: 200px !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
 }
-
 
 @media (max-width: 768px) {
-    .chartjs-legend ul {
-        font-size: 6px !important;  /* Smaller on mobile */
-    }
+  .chartjs-legend ul {
+    font-size: 6px !important; /* Smaller on mobile */
+  }
 
-   
+  .pieChartsWrapper {
+    flex-direction: column;
+    align-items: center; /* Center the charts horizontally */
+    justify-content: center; /* Center them vertically */
+    min-height: 80vh; /* Ensures full height for proper centering */
+    width: 80%;
+    margin: 10%;
+  }
 
-    .pieChartsWrapper {
-        flex-direction: column;
-        align-items: center; /* Center the charts horizontally */
-        justify-content: center; /* Center them vertically */
-        min-height: 80vh; /* Ensures full height for proper centering */
-        width: 80%;
-        margin: 10%;
-        
-    }
+  .pieChartContainer {
+    max-width: 110px; /* Same as old settings */
+    padding: 1px; /* Reduced from 2px to maximize space for the pie chart */
+    min-height: 180px; /* Already set to increase rectangle height */
+  }
 
-    .pieChartContainer {
-        max-width: 110px; /* Same as old settings */
-        padding: 1px; /* Reduced from 2px to maximize space for the pie chart */
-        min-height: 180px; /* Already set to increase rectangle height */
-    }
+  .chart-total {
+    font-size: 0.85rem; /* Slightly smaller than 0.9rem for better proportion */
+  }
 
-   
+  .chartjs-legend ul {
+    font-size: 6px !important; /* Already correct */
+  }
 
-    .chart-total {
-        font-size: 0.85rem; /* Slightly smaller than 0.9rem for better proportion */
-    }
+  .addBudgetFormWrapper {
+    width: 90% !important;
+  }
 
-    .chartjs-legend ul {
-        font-size: 6px !important; /* Already correct */
-    }
+  /* Remove previous text alignment */
+  .addBudgetFormWrapper .subCategoryInput,
+  .addBudgetFormWrapper .text {
+    justify-items: right;
+  }
 
-    
-    
-    .addBudgetFormWrapper {
-          
-        width: 90% !important;
-        
-    }
-
-    /* Remove previous text alignment */
-    .addBudgetFormWrapper .subCategoryInput,
-    .addBudgetFormWrapper .text {
-           justify-items: right;
-        
-    }
-
-    /* Center the button within the form */
-    .addBudgetFormWrapper .btn {
-        align-self: center;
-    }
-
+  /* Center the button within the form */
+  .addBudgetFormWrapper .btn {
+    align-self: center;
+  }
 }
-
-
-
-
 
 /* Existing button styles */
 .dailyBalance_account-type-btn.selected-btn {
-    background-color: #77ace0 !important;
-    color: black !important;
+  background-color: #77ace0 !important;
+  color: black !important;
 }
 
 .dailyBalance_account-type-btn.default-btn {
-   
-    color: white !important;
+  color: white !important;
 }
-
 
 /* Chart container */
 .daily-balance-container {
-    position: relative;
-    padding: 20px;
-    max-width: 90%;
-    margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /* Chart wrapper */
 .chart-wrap {
-    --radius: 20px;
-    --perspective: 800px;
-    position: relative;
-    border-radius: var(--radius);
-    perspective: var(--perspective);
-    transform-style: preserve-3d;
+  --radius: 20px;
+  --perspective: 800px;
+  position: relative;
+  border-radius: var(--radius);
+  perspective: var(--perspective);
+  transform-style: preserve-3d;
 }
 
 /* Subtle shadow beneath the chart */
 .chart-wrap::before {
-    content: "";
-    position: absolute;
-    inset: 8px;
-    border-radius: 50px;
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 
-        0 60px 140px 30px rgba(0, 0, 0, 0.8),
-        0 -60px 120px rgba(102, 106, 135, 0.4);
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 60px 140px 30px rgba(0, 0, 0, 0.8),
+    0 -60px 120px rgba(102, 106, 135, 0.4);
+  filter: blur(5px);
+  z-index: -1;
 }
 
 /* Glow effects */
 .glow {
-    position: absolute;
-    border-radius: inherit;
-    pointer-events: none;
-    inset: 0; /* Align the glow directly with the chart's border */
-    z-index: 3;
-    overflow: hidden; /* Prevent the glow from spilling outside */
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+  inset: 0; /* Align the glow directly with the chart's border */
+  z-index: 3;
+  overflow: hidden; /* Prevent the glow from spilling outside */
 }
 
 .glow::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 100%; /* Match the chart's dimensions */
-    height: 100%;
-    background: conic-gradient(
-        #b52f2f 0%,
-        transparent 20%,
-        #cf8030 50%,
-        black 60%,
-        transparent 80%,
-        #b52f2f 100%
-    );
-    filter: blur(5px); /* Tighten the blur to keep the glow close to the border */
-    opacity: 0.5; /* Adjust opacity for subtlety */
-    transition: transform 1.5s ease;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%; /* Match the chart's dimensions */
+  height: 100%;
+  background: conic-gradient(
+    #b52f2f 0%,
+    transparent 20%,
+    #cf8030 50%,
+    black 60%,
+    transparent 80%,
+    #b52f2f 100%
+  );
+  filter: blur(5px); /* Tighten the blur to keep the glow close to the border */
+  opacity: 0.5; /* Adjust opacity for subtlety */
+  transition: transform 1.5s ease;
 }
 
 /* Hover effect for glow */
 .chart-wrap:hover .glow::before {
-    transform: translate(-50%, -50%) rotate(410deg);
+  transform: translate(-50%, -50%) rotate(410deg);
 }
 
 /* Chart card */
 .chart-card {
-    position: relative;
-    padding: 20px;
-    border-radius: inherit;
-    background: linear-gradient(to bottom, #201c29 40%, #37374b 100%);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7), inset 0 0 3px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s cubic-bezier(0.03, 1, 0.5, 1);
-    transform-style: preserve-3d;
-    z-index: 2;
+  position: relative;
+  padding: 20px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #201c29 40%, #37374b 100%);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7),
+    inset 0 0 3px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s cubic-bezier(0.03, 1, 0.5, 1);
+  transform-style: preserve-3d;
+  z-index: 2;
 }
 
 /* Header */
 header {
-    line-height: 20px;
-    margin-bottom: 10px;
-    position: relative;
-    color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    align-items: center;
-    
+  line-height: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
 }
 
 header .title {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 header .views {
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
 }
 
 header .icon {
-    border-radius: 50%;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: -6px;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 1px 2px rgba(250, 187, 15, 0.7), 0 -3px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1px 2px rgba(250, 187, 15, 0.7),
+    0 -3px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header .icon svg {
-    animation: heart 1.5s linear infinite;
+  animation: heart 1.5s linear infinite;
 }
 
 @keyframes heart {
-    5% { transform: scale(0.8); }
-    20% { transform: scale(1.2); }
-    40% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    70% { transform: scale(0.8); }
-    100% { transform: scale(1); }
+  5% {
+    transform: scale(0.8);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Chart */
 .daily-balance-chart {
-    width: 100%;
-    margin: 20px auto;
-    height: 60%;
+  width: 100%;
+  margin: 20px auto;
+  height: 60%;
 }
 
 #dailyBalance_lineChart {
-    width: 100% !important;
-    height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
 }
-
-
 
 /* Container for the chart with border radius and positioning */
 .chart-wrap {
-    --radius: 20px;
-    --perspective: 800px;
-    position: relative;
-    border-radius: var(--radius);
-    perspective: var(--perspective);
-    transform-style: preserve-3d;
-    padding: 5px; /* Add space for the moving border */
-    overflow: hidden; /* Prevent the border from spilling out */
+  --radius: 20px;
+  --perspective: 800px;
+  position: relative;
+  border-radius: var(--radius);
+  perspective: var(--perspective);
+  transform-style: preserve-3d;
+  padding: 5px; /* Add space for the moving border */
+  overflow: hidden; /* Prevent the border from spilling out */
 }
 
 /* Glowing gradient border */
 .chart-wrap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #ffd867, #ec526b, #ffd867, #ec526b);
-    background-size: 400% 400%;
-    border-radius: inherit;
-    z-index: -1;
-    animation: gradientBorder 5s linear infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffd867, #ec526b, #ffd867, #ec526b);
+  background-size: 400% 400%;
+  border-radius: inherit;
+  z-index: -1;
+  animation: gradientBorder 5s linear infinite;
 }
 
 /* Keyframes to animate the gradient along the border */
 @keyframes gradientBorder {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Existing glow effect */
 .glow {
-    position: absolute;
-    border-radius: inherit;
-    pointer-events: none;
-    inset: 0;
-    z-index: 3;
-    overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
 }
 
 .glow::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(
-        #b52f2f 0%,
-        transparent 20%,
-        #cf8030 50%,
-        black 60%,
-        transparent 80%,
-        #b52f2f 100%
-    );
-    filter: blur(5px);
-    opacity: 0.5;
-    transition: transform 1.5s ease;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    #b52f2f 0%,
+    transparent 20%,
+    #cf8030 50%,
+    black 60%,
+    transparent 80%,
+    #b52f2f 100%
+  );
+  filter: blur(5px);
+  opacity: 0.5;
+  transition: transform 1.5s ease;
 }
 
 /* Hover effect for the glow */
 .chart-wrap:hover .glow::before {
-    transform: translate(-50%, -50%) rotate(410deg);
+  transform: translate(-50%, -50%) rotate(410deg);
 }
-
 
 /* Ensure the chart container takes full width on mobile */
 @media (max-width: 768px) {
-    .daily-balance-container {
-        max-width: 100% !important; /* Full width on small screens */
-        padding: 0.25%; /* Reduce padding for better fit */
-    }
+  .daily-balance-container {
+    max-width: 100% !important; /* Full width on small screens */
+    padding: 0.25%; /* Reduce padding for better fit */
+  }
 
-    .daily-balance-chart {
-        width: 100% !important;
-        height: 250% !important; /* Increase height for better visibility */
-    }
+  .daily-balance-chart {
+    width: 100% !important;
+    height: 250% !important; /* Increase height for better visibility */
+  }
 
-    #dailyBalance_lineChart {
-        width: 100% !important;
-        height: 250% !important;
-    }
-    
-    .budgetCalendarAddBugetWrapper {
-        width: 100%;       
-    }
+  #dailyBalance_lineChart {
+    width: 100% !important;
+    height: 250% !important;
+  }
+
+  .budgetCalendarAddBugetWrapper {
+    width: 100%;
+  }
 }
 
 /* For larger screens, maintain proportions */
 @media (min-width: 769px) {
-    .daily-balance-chart {
-        width: 90%;
-        height: 350px;
-    }
+  .daily-balance-chart {
+    width: 90%;
+    height: 350px;
+  }
 }
-
-
 
 /* Updated Month-Year Picker Styles */
 .month-year-picker-container {
-    position: relative;
-    top: 0;
-    left: 0;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .month-year-picker-container .year-month-picker.hide {
-    display: none;
+  display: none;
 }
 
 .month-year-picker-container .year-month-picker {
-    display: block;
-    position: absolute;
-    background: linear-gradient(145deg, #2a2f38, #1e2228); /* Subtle gradient background */
-    right: 0px;
-    width: 200px;
-    padding: 8px;
-    z-index: 100;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border: 1px solid #61dafb;
+  display: block;
+  position: absolute;
+  background: linear-gradient(
+    145deg,
+    #2a2f38,
+    #1e2228
+  ); /* Subtle gradient background */
+  right: -10px;
+  width: 200px;
+  padding: 8px;
+  z-index: 100;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid #61dafb;
 }
 
 .month-year-picker-container .year-month-picker .year-picker {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-    color: #d6dadf;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #d6dadf;
+  font-weight: bold;
 }
 
 .month-year-picker-container .year-month-picker .year-picker button {
-    background-color: #3a404c;
-    color: #d6dadf;
-    border: none;
-    padding: 4px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #3a404c;
+  color: #d6dadf;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.light-theme
+  .month-year-picker-container
+  .year-month-picker
+  .year-picker
+  button {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 .month-year-picker-container .year-month-picker .year-picker button:hover {
-    background-color: #61dafb;
-    color: #1e2228;
+  background-color: #61dafb;
+  color: #1e2228;
 }
 
 .month-year-picker-container .year-month-picker .month-picker {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    gap: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 4px;
 }
 
 .month-year-picker-container .year-month-picker .month-picker button {
-    background-color: #3a404c;
-    color: #d6dadf;
-    border: none;
-    padding: 6px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #3a404c;
+  color: #d6dadf;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-theme
+  .month-year-picker-container
+  .year-month-picker
+  .month-picker
+  button {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 .month-year-picker-container .year-month-picker .month-picker button:hover {
-    background-color: #61dafb;
-    color: #1e2228;
+  background-color: #61dafb;
+  color: #1e2228;
 }
 
 .month-year-picker-container .year-month-picker .month-picker button.selected {
-    background-color: #61dafb;
-    color: #1e2228;
-    font-weight: bold;
+  background-color: #61dafb;
+  color: #1e2228;
+  font-weight: bold;
 }
 
 .month-year-picker-container input {
-    background-color: #2a2f38;
-    color: #d6dadf;
-    border: 1px solid #61dafb;
-    padding: 5px 10px;
-    border-radius: 4px;
-    width: 150px;
-    cursor: pointer;
+  background-color: #2a2f38;
+  color: #d6dadf;
+  border: 1px solid #61dafb;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.light-theme .month-year-picker-container .year-month-picker {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #000000;
 }
 
 .picker-actions {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0 0 0;
-    border-top: 1px solid #444;
-    margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0 0 0;
+  border-top: 1px solid #444;
+  margin-top: 8px;
 }
 
-.clear-button, .this-month-button {
-    background-color: #3a404c;
-    color: #d6dadf;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.clear-button,
+.this-month-button {
+  background-color: #3a404c;
+  color: #d6dadf;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.clear-button:hover, .this-month-button:hover {
-    background-color: #61dafb;
-    color: #1e2228;
+.light-theme .this-month-button {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.clear-button:hover,
+.this-month-button:hover {
+  background-color: #61dafb;
+  color: #1e2228;
 }
 
 .calendar-picker-display {
-    display: inline-block;
-    padding: 5px 10px;
-    border: 1px solid #77ace0;
-    border-radius: 4px;
-    background-color: #333;
-    color: #d6dadf;
-    font-size: 14px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #77ace0;
+  border-radius: 4px;
+  background-color: #333;
+  color: #d6dadf;
+  font-size: 14px;
+  cursor: pointer;
 }
+
+/* light theme styles for the calendar picker */
+.light-theme .calendar-picker-display {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
 .clear-button {
-    display: none;
+  display: none;
 }
-
-
 
 #scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background-color: #61dafb;
-    color: #282c35;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    opacity: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #61dafb;
+  color: #282c35;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 1;
 }
 
 #scrollToTopBtn i {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #scrollToTopBtn:hover {
-    background-color: #77ace0;
-    transform: scale(1.1);
-    opacity: 1 !important;
+  background-color: #77ace0;
+  transform: scale(1.1);
+  opacity: 1 !important;
 }
 
 #scrollToTopBtn:focus {
-    outline: 2px solid #77ace0;
-    outline-offset: 2px;
-    opacity: 1 !important;
+  outline: 2px solid #77ace0;
+  outline-offset: 2px;
+  opacity: 1 !important;
 }
 
 @keyframes gradualDim {
-    0% { opacity: 1; }
-    20% { opacity: 0.8; }
-    40% { opacity: 0.6; }
-    60% { opacity: 0.5; }
-    80% { opacity: 0.4; }
-    100% { opacity: 0.2; }
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 .dim-button {
-    animation: gradualDim 2s ease forwards;
+  animation: gradualDim 2s ease forwards;
 }
 
 @media (max-width: 768px) {
-    #scrollToTopBtn {
-        bottom: 80px;
-    }
+  #scrollToTopBtn {
+    bottom: 80px;
+  }
 }
 /* From Uiverse.io by AlimurtuzaCodes */
 .btn {
@@ -1073,23 +1124,32 @@ header .icon svg {
   transition: all 450ms ease-in-out;
 }
 
+/* Dark theme button css */
+.light-theme .btn {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+}
 .sparkle {
-  fill: #AAAAAA;
+  fill: #aaaaaa;
   transition: all 800ms ease;
 }
 
 .text {
   font-weight: 600;
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-size: small; /* Reduced font size */
 }
 
+.light-theme .text {
+  color: #444444;
+}
+
 .btn:hover {
-  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  background: linear-gradient(0deg, #a47cf3, #683fea);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-  0px 0px 180px 0px #9917FF;
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
   transform: translateY(-2px);
 }
 
@@ -1106,113 +1166,174 @@ header .icon svg {
 
 /* Container for the Select2 dropdown */
 .select2-container--default .select2-selection--single,
-.select2-container--default .select2-selection--multiple { /* Include multiple for index.html */
-    background-color: #3c444f !important; /* Dark background */
-    color: #eee !important; /* Light text */
-    border: 1px solid #555 !important; /* Darker border */
-    height: 38px !important; /* Adjust height if needed */
-    padding: 6px 12px !important; /* Adjust padding */
+.select2-container--default .select2-selection--multiple {
+  /* Include multiple for index.html */
+  background-color: #3c444f !important; /* Dark background */
+  color: #eee !important; /* Light text */
+  border: 1px solid #555 !important; /* Darker border */
+  height: 38px !important; /* Adjust height if needed */
+  padding: 6px 12px !important; /* Adjust padding */
+}
+
+.light-theme .select2-container--default .select2-selection--single,
+.light-theme .select2-container--default .select2-selection--multiple {
+  background-color: #ffffff !important; /* Light background */
+  color: #333 !important; /* Dark text */
+  border: 1px solid #ccc !important; /* Lighter border */
+  height: 38px !important;
 }
 
 /* Style for the selected value */
-.select2-container--default .select2-selection--single .select2-selection__rendered,
-.select2-container--default .select2-selection--multiple .select2-selection__rendered { /* Include multiple */
-    color: #eee !important; /* Light text for selected value */
-    line-height: 26px; /* Vertically align text */
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered,
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__rendered {
+  /* Include multiple */
+  color: #eee !important; /* Light text for selected value */
+  line-height: 26px; /* Vertically align text */
+}
+
+.light-theme
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered,
+.light-theme
+  .select2-container--default
+  .select2-selection--multiple
+  .select2-selection__rendered {
+  color: #333 !important; /* Dark text for selected value */
 }
 
 /* Style for the dropdown arrow */
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 36px !important; /* Match container height */
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 36px !important; /* Match container height */
 }
 
 /* Style for the dropdown panel */
 .select2-container--default .select2-dropdown {
-    background-color: #3c444f !important; /* Dark background for dropdown */
-    border: 1px solid #555 !important; /* Darker border */
+  background-color: #3c444f !important; /* Dark background for dropdown */
+  border: 1px solid #555 !important; /* Darker border */
 }
 
 /* Style for highlighted (hovered) option */
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #555 !important; /* Slightly lighter dark for hover */
-    color: #fff !important; /* White text on hover */
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: #555 !important; /* Slightly lighter dark for hover */
+  color: #fff !important; /* White text on hover */
 }
 
 /* Style for selected option */
 .select2-container--default .select2-results__option[aria-selected="true"] {
-    background-color: #4a5261 !important; /* Different background for selected */
-    color: #fff !important; /* White text for selected */
+  background-color: #4a5261 !important; /* Different background for selected */
+  color: #fff !important; /* White text for selected */
 }
 
 /* Style for the search input within the dropdown */
 .select2-search input {
-    background-color: #4a5261 !important; /* Darker background for search input */
-    color: #eee !important; /* Light text for search input */
-    border: 1px solid #555 !important; /* Darker border */
+  background-color: #4a5261 !important; /* Darker background for search input */
+  color: #eee !important; /* Light text for search input */
+  border: 1px solid #555 !important; /* Darker border */
 }
 
 /* Style for selected tags in multiple select */
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #555 !important; /* Dark background for tags */
-    color: #eee !important; /* Light text for tags */
-    border: 1px solid #666 !important; /* Darker border for tags */
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
+  background-color: #555 !important; /* Dark background for tags */
+  color: #eee !important; /* Light text for tags */
+  border: 1px solid #666 !important; /* Darker border for tags */
 }
 
 /* Style for the remove button on selected tags */
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-    color: #ccc !important; /* Lighter color for remove button */
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__remove {
+  color: #ccc !important; /* Lighter color for remove button */
 }
 
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-    color: #fff !important; /* White color on hover */
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__remove:hover {
+  color: #fff !important; /* White color on hover */
 }
 
 /* Style for the dropdown arrow */
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 36px !important; /* Match container height */
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 36px !important; /* Match container height */
 }
 
 /* Style for the dropdown panel */
 .select2-container--default .select2-dropdown {
-    background-color: #3c444f !important; /* Dark background for dropdown */
-    border: 1px solid #555 !important; /* Darker border */
+  background-color: #3c444f !important; /* Dark background for dropdown */
+  border: 1px solid #555 !important; /* Darker border */
 }
 
 /* Style for highlighted (hovered) option */
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: #555 !important; /* Slightly lighter dark for hover */
-    color: #fff !important; /* White text on hover */
+.select2-container--default
+  .select2-results__option--highlighted[aria-selected] {
+  background-color: #555 !important; /* Slightly lighter dark for hover */
+  color: #fff !important; /* White text on hover */
 }
 
 /* Style for selected option */
 .select2-container--default .select2-results__option[aria-selected="true"] {
-    background-color: #4a5261 !important; /* Different background for selected */
-    color: #fff !important; /* White text for selected */
+  background-color: #4a5261 !important; /* Different background for selected */
+  color: #fff !important; /* White text for selected */
 }
 
 /* Style for the search input within the dropdown */
 .select2-search input {
-    background-color: #4a5261 !important; /* Darker background for search input */
-    color: #eee !important; /* Light text for search input */
-    border: 1px solid #555 !important; /* Darker border */
+  background-color: #4a5261 !important; /* Darker background for search input */
+  color: #eee !important; /* Light text for search input */
+  border: 1px solid #555 !important; /* Darker border */
 }
 
 /* Style for selected tags in multiple select */
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #555 !important; /* Dark background for tags */
-    color: #eee !important; /* Light text for tags */
-    border: 1px solid #666 !important; /* Darker border for tags */
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
+  background-color: #555 !important; /* Dark background for tags */
+  color: #eee !important; /* Light text for tags */
+  border: 1px solid #666 !important; /* Darker border for tags */
 }
 
 /* Style for the remove button on selected tags */
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-    color: #ccc !important; /* Lighter color for remove button */
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__remove {
+  color: #ccc !important; /* Lighter color for remove button */
 }
 
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-    color: #fff !important; /* White color on hover */
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__remove:hover {
+  color: #fff !important; /* White color on hover */
 }
 /* Ensure chart legend text is black in light theme */
-.light-theme .chartjs-legend ul li, .light-theme .chartjs-legend ul li span {
-    color: #000 !important;
+.light-theme .chartjs-legend ul li,
+.light-theme .chartjs-legend ul li span {
+  color: #000 !important;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
 }
